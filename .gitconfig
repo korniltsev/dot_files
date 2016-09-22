@@ -1,0 +1,18 @@
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+        ignored = !git ls-files -v | grep "^[[:lower:]]"
+[user]
+	name = Anatoly Korniltsev
+	email = korniltsev.anatoly@gmail.com
+[push]
+	default = current
+[color]
+	ui = auto
+[core]
+	autocrlf = input
+[http]
+	cookiefile = /Users/anatoly.korniltsev/.gitcookies
