@@ -1,0 +1,14 @@
+# init
+repo init -u https://android.googlesource.com/platform/manifest
+
+# the same but depth=1 for faster clone
+repo init  --depth=1 -u https://android.googlesource.com/platform/manifest
+
+# sync network in 4 threads and sync local in 16 threads
+repo sync -n -j 4 && repo sync -l -j 16
+
+# the same but sync only current branch -c
+repo sync -c -n -j 4 && repo sync -c -l -j 16
+
+# convert shalow clone to full
+git fetch --unshallow
