@@ -1,0 +1,19 @@
+[
+    {
+        "command": "goto_definition",
+        "keys": ["command+b"]
+    },
+    {
+        "command": "jump_forward",
+        "keys": ["command+alt+right"]
+    },
+    {
+        "command": "jump_back",
+        "keys": ["command+alt+left"]
+    },
+    {
+        "command": "reveal_in_side_bar",
+        "keys": ["command+r"]
+    },
+     
+]
