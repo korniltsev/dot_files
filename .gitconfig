@@ -5,7 +5,7 @@
 	st = status
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
         ignored = !git ls-files -v | grep "^[[:lower:]]"
-        brt = branch --sort=-committerdate
+        brt = branch --sort=-*committerdate
 [user]
 	name = Anatoly Korniltsev
 	email = korniltsev.anatoly@gmail.com
