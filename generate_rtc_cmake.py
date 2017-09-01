@@ -4,6 +4,14 @@ excludes = [
   'webrtc/src/webrtc/sdk/objc/',
   'webrtc/src/webrtc/examples'
 ]
+
+headers_only=[
+  "webrtc/common_audio",
+  "webrtc/voice_engine",
+  "webrtc/media",
+  "webrtc/modules",
+  "webrtc/test",
+]
 header = """
 cmake_minimum_required(VERSION 3.6)
 project(cpp)
@@ -35,7 +43,10 @@ for root, directory, fs  in os.walk('webrtc/src/webrtc'):
       skip = False
       for e in excludes:
         if root.startswith(e):
-          skip = True
+	  skip = True
+      for e in headers_only:
+        if e in root and f.endswith(".cc"):
+	  skip = True
       if skip:
         break
       print "    " + root + "/" + f
