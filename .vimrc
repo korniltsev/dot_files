@@ -1,7 +1,9 @@
-set autoindent                                                                                                                                         
-colorscheme monokai                                                                                                                                    
-set number                                                                                                                                             
-set ic                                                                                                                                                       
+set autoindent
+colorscheme monokai
+set number
+set paste
+set ic
+set shiftwidth=2
                                                                                                                                                        
 call plug#begin('~/.vim/plugged')                                                                                                                      
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }                                                                                    
