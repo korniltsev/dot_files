@@ -7,7 +7,7 @@
         ignored = !git ls-files -v | grep "^[[:lower:]]"
         brt = branch --sort=-*committerdate
 [user]
-	name = Anatoly Korniltsev
+	name = Tolya Korniltsev
 	email = korniltsev.anatoly@gmail.com
 [push]
 	default = current
